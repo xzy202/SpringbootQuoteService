@@ -1,0 +1,21 @@
+<div class="row">
+ <div class="col-md-4"></div>
+ <div class="col-md-4">
+  <form role="form" class="quote-form" ng-submit="saveQuote()">
+   <div class="form-group">
+    <label for="quoteText"> The Quote </label>
+    <textarea class="form-control" id="quoteText" ng-model="quote.text"></textarea>
+   </div>
+   <div class="form-group">
+    <label for="quoteAuthor"> Author </label> 
+    <input class="form-control" id="quoteAuthor" type="text" ng-model="quote.author.name" />
+   </div>
+   <div class="form-group">
+    <label for="quoteSource"> Source </label> 
+    <input class="form-control" id="quoteSource" type="text" ng-model="quote.source"/>
+   </div>
+   <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+ </div>
+ <div class="col-md-4"></div>
+</div>
